@@ -1,0 +1,5 @@
+How are recursion problems thought/solved and coded?
+
+// 1. base case ==> simplest possible input for this function
+// 2. find relation ==> how the larger problem can be solved with the help of the solution of the smaller problem
+// 3. generalise - put all this in a mathematical function or tree.
