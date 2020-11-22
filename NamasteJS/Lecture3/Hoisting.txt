@@ -1,0 +1,23 @@
+https://www.youtube.com/watch?v=Fnlnw8uY6jo&list=PLlasXeu85E9cQ32gLCvAvr9vNaUccPVNP&index=4&ab_channel=AkshaySaini
+
+Hoisting is totally related to execution context logic i.e the memory allocation and code execution phase.
+
+
+=======================================================================================
+getName(); //hello world
+console.log(x); //undefined
+console.log(getName); //ƒ getName(){console.log("hello world");}
+
+var x= 7;
+function getName(){
+    console.log("hello world");
+}
+
+=======================================================================================
+explanation: 
+when this code starts executing, getName function is already in memory (bcuz of memory allocatoin phase)
+but x has been assigned undefined before (bcuz of memory allocatoin phase), so at line 7
+function gets executed and result is printed. 
+line8: x is undefined till now so undefined is printed.
+line 9: function is printed as is(we are not invoking the function, just printing)
+line11: now x is assigned 7

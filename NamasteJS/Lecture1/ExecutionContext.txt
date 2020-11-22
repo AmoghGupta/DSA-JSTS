@@ -1,0 +1,4 @@
+1. Everything in JS happens inside an execution context.
+2. Like a big container where whole js is executed.
+3. JS is synchronous single-threaded lang. (can execute 1 command at a time in a sync way)
+4.

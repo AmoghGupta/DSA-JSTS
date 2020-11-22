@@ -1,0 +1,31 @@
+https://www.youtube.com/watch?v=QCRpVw2KXf8&list=PLlasXeu85E9cQ32gLCvAvr9vNaUccPVNP&index=6&ab_channel=AkshaySaini
+
+
+shortest JS program is an empty JS file.
+A GLOBAL EXECUTION CONTEXT is still created even if there is nothing to execute.
+WINDOW object and all other global variables are created in global EXECUTION context so that you can access them any where. JS engine does
+all this for us.
+
+JS also gives us "this" which points to the current execution context. by default this "this" points to window object.
+
+
+this == window
+// return true
+
+
+every browser has its own engine.. for example chrome has v8... all engines create this global variable.
+
+
+whenever an execution context is created.. a "this" is created for it.. 
+
+any code we write gets attached to the global space:
+for example:
+var a=10;
+function b(){
+    //
+}
+window.a will give u 10
+window.b will give u the complete function
+
+this.a will give u 10
+this.b will give u the complete function
