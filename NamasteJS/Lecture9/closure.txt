@@ -1,0 +1,22 @@
+// closure is a function binded together with its lexical envt.
+// closure = function + lexical envt
+
+// function maintain their lexical scope i.e they keep the outer function/parent function bindings available.
+
+
+
+function x(){
+    var a = 7;
+    function y(){
+        console.log(a);        
+    }
+    return y;
+}
+var z = x();
+console.log(z);
+z();
+
+
+// when you return y function not only the code is returned but the closure along with its enclosed function
+// lexical scope was returned
+// so when you execute z somewhere else in the program, y holds the REFERENCE of "a" i.e 7

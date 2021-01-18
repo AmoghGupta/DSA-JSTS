@@ -1,0 +1,19 @@
+// shadowing in JS
+
+var a =100;
+{
+    var a =10;
+    let b =20;
+    const c = 30;
+    console.log(a);
+    console.log(b);
+    console.log(c);
+}
+
+console.log(a);
+console.log(b);
+console.log(c);
+
+// a is present in global scope
+// here "a" is getting overshadowed by the block level scoped "a" variable because they both point to the same global scope
+// O/p is 10,20,30,10

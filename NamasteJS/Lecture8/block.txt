@@ -1,0 +1,17 @@
+//block
+{
+    //compound statement
+}
+
+// block is combined with if,for,while etc etc
+
+// a block is created where we want to use multiple statements in place of single statement
+
+if(true) console.log("is valid")
+
+// now when you want to execute multiple statements you wrap them up in block statement 
+
+
+
+// let and const are BLOCK SCOPED i.e they are not accessible outside the blocks like variables 
+// in any other programming langugae

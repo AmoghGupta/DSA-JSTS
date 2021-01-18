@@ -1,0 +1,18 @@
+console.log(a); // "a" not accesible without initialization
+ 
+let a  = 10;
+
+var b = 100;
+
+// execution context again comes to picture
+// even before code execution, for 'b' a memory is allocated with "undefined" in global space
+// but for "a" since its a let statement a memory is allocated with "undefined" but not in global space
+// but in a different memory 'Script' where 'a' is not accessible
+// hence we get an error cannot access 'a' before initialization.
+// temporal dead zone: this is the time when 'a' has not been initialized and also is not accesible since its locked.
+// after initialization 'a' becomes accesible and is moved to a memory where its accesible (not in globalspace hence window.a wont work).
+// let variables cannot be redeclared
+
+// with const also all the above holds true
+// let is strict and const is stricter
+// you cannot reassign a const variable

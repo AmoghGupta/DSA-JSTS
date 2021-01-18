@@ -1,0 +1,21 @@
+// shadowing in JS
+
+let b =100;
+{
+    var a =10;
+    let b =20;
+    const c = 30;
+    console.log(a);
+    console.log(b);
+    console.log(c);
+}
+
+console.log(a);
+console.log(b);
+console.log(c);
+
+
+// 10,20,30,100
+
+// here let is used, so b present outside (global scope) and b present inside (local scope) point to different scopes..
+// thats why let is block scoped

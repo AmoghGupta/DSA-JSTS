@@ -1,0 +1,11 @@
+https://www.youtube.com/watch?v=uH-tVP8MUs8&list=PLlasXeu85E9cQ32gLCvAvr9vNaUccPVNP&index=8&ab_channel=AkshaySaini
+// lexical meaning in hierachy or in order.
+// JS follows lexical scoping
+// lexical scoping is also related to execution context only.
+// whenever an execution context is created automatically lexical scoping is created.
+// each execution context maintains a lexical environment memory also i.e its parent container.
+
+// a variable is first searched in its own execution context and if not found then its parents execution context and so on
+// this is also called scope chain. JS engine traverses lexically in scope chain.
+
+
