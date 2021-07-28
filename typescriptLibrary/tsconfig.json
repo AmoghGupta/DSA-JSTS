@@ -1,0 +1,21 @@
+// You need to add the "declaration": true flag. This will generate the .d.ts files (aka declaration files) which contain the types of your code.
+// This way, if someone is using your library and they also use TypeScript, they get the benefits of typesafety and autocomplete!
+
+// The module compiler option "module": "commonjs" is required if you want your code to run seamlessly with most current node.js applications.
+
+// "target": "es2015" specifies which version of JavaScript your code will get transpiled to.
+
+// Choosing es2015 as the compile target makes your library compatible with node.js version 8 and upwards. 
+// "outDir": "./dist" will write your compiled files into the dist folder and the include option specifies where your source code lives.
+
+{
+    "compilerOptions": {
+      "module": "commonjs",
+      "target": "es2015",
+      "declaration": true,
+      "outDir": "./dist"
+    },
+    "include": [
+      "src/**/*"
+    ]
+}
