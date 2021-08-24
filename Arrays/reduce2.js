@@ -12,3 +12,4 @@ const tally = fruits.reduce((accumulator,fruit)=>{
 },{});
 
 console.log(tally);
+// { apple: 2, orange: 1, banana: 1 }
