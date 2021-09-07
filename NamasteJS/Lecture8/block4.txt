@@ -15,7 +15,4 @@ console.log(b);
 console.log(c);
 
 
-// 10,20,30,100
-
-// here let is used, so b present outside (global scope) and b present inside (local scope) point to different scopes..
-// thats why let is block scoped
+// 10,20,30,10,100, c is not defined
