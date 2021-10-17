@@ -5,11 +5,10 @@ let oldObject = {
     "key2":"value2",
     "key3":"value3"
 };
+const newObject = {...oldObject};
+
 
 let oldArray = ["amogh",124,1.2];
-
-const newObject = {...oldObject};``
-
 const newArray = {...oldArray};
 
 console.log(newObject);
