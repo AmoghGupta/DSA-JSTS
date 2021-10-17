@@ -4,10 +4,10 @@ let employee = {
     "collegegrade":"average",
 };
 
+//acting as rest(collector)
+let {collegegrade, ...employee1} = employee;
 
-let {collegegrade, ...employee} = employee;
-
-console.log(employee); //{ "skill":"high","location":"Hyderabad"};
+console.log(employee1); //{ "skill":"high","location":"Hyderabad"};
 
 console.log(employee.hasOwnProperty('collegegrade')) //false
 

@@ -9,7 +9,7 @@ const newObject = {...oldObject};
 
 
 let oldArray = ["amogh",124,1.2];
-const newArray = {...oldArray};
+const newArray = [...oldArray];
 
 console.log(newObject);
 console.log(newArray);

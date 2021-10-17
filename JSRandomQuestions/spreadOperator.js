@@ -1,7 +1,8 @@
 // spread operator 
-// Spread syntax (...) allows an ITERABLE such as an array expression or string to be expanded in places where zero or more arguments (for function calls) 
+// Spread syntax (...) allows:
+// 1. An ITERABLE such as an array expression or string to be expanded in places where zero or more arguments (for function calls) 
 // or elements (for array literals) are expected, 
-//or an object expression to be expanded in places where zero or more key-value pairs (for object literals) are expected.
+// 2. An object expression to be expanded in places where zero or more key-value pairs (for object literals) are expected.
 
 let myvar = null;
 console.log({...myvar}); // {}
