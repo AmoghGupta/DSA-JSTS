@@ -1,0 +1,1 @@
+//  intersection in array.

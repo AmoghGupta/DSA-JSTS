@@ -1,0 +1,1 @@
+// find the first unique non repetitive character in string "hellolh"
