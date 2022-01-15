@@ -2,6 +2,8 @@
 // given a matrix you can move top bottom left and right
 // now u are given a position, u need to move top bottom left and right, fill all positions with new color 
 
+// Flood fill is a graph traversal problem
+
 const screen = [
     [0, 0, 0, 0, 0, 0, 0, 0],
     [0, 0, 0, 0, 0, 0, 0, 0],
