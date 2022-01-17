@@ -1,8 +1,8 @@
 // average time complexity for access, search, insertion ,deletion is
 // Θ(log(n))
 
-// pre post in traversals are DFS
-// level order traversal is BFS
+// pre, post and inorder traversals are DFS traversals
+// level order traversal is BFS traversals
 
 class Node{
     constructor(data, left=null,right=null){
