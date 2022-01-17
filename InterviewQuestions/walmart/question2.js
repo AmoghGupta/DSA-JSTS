@@ -1,20 +1,28 @@
  //find the contiguous subarray (containing at least one number) which has the largest sum and return its sum.
-
+ // LOGIC:
+ // fix ith element one by one and then keep adding preceding elements one by one 
+ // update the max when the new sum is greater than old max
+ 
  const maxSubArray = (nums) => {
-    // initiate two variable, maxSum for total max, sum for current max
-    let maxSum = -Infinity
-    let currentSum = 0
-    // iterate through the nums, store sub-problems result
-    for(let i = 0; i < nums.length; i++){ 
-        //cumulating answers to the top
-        
-        //compare currentSum add current number 
-        //with current number and store the maximum value
-        currentSum = Math.max(nums[i], currentSum + nums[i])
-        
-        //compare maxSum with currentSum and store the greater value
-        maxSum = Math.max(currentSum, maxSum)
-        
+    let max = -Infinity;
+    for(let i=0; i<nums.length; i++){
+        let maxsubArr = [];
+        let sum = nums[i];
+        maxsubArr.push(nums[i]);
+        for(let j=i+1;j<nums.length;j++){
+            maxsubArr.push(nums[j]);
+            sum = sum + nums[j];
+            if(sum >max){
+                max = sum;
+                console.log(maxsubArr +' and sum is '+max);
+            }
+        }
     }
-    return maxSum
-}
+    return max;
+}   
+
+const nums = [-2, -3, 4, -1, -2, 1, 5, -3]; //answer is 7
+// [-3, -4, 5, -1, 2, -4, 6, -1] is 8
+// [-2, 3, -1, 2] is 4
+
+console.log("Answer is: "+ maxSubArray(nums));
