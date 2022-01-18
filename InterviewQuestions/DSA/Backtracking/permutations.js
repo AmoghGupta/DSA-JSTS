@@ -4,7 +4,6 @@ function swap(arr,l,i){
    arr[l]= arr[i];
    arr[i] =temp;
    return arr;
-
 }
 
 function permute(arr,l,r) { 
