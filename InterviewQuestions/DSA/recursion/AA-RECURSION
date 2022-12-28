@@ -1,5 +1,29 @@
+Best video- https://www.youtube.com/watch?v=M2uO2nMT0Bk
+
+
 How are recursion problems thought/solved and coded?
 
 // 1. base case ==> simplest possible input for this function
 // 2. find relation ==> how the larger problem can be solved with the help of the solution of the smaller problem
 // 3. generalise - put all this in a mathematical function or tree.
+
+
+
+1. base condition - base condition is represented by answers we already have
+2. break it down to simpler problem 
+3. generalise- recurrence relation.
+
+
+1. identify if you can break down the problem into smaller problem
+2. write the recurrence relation if needed
+3. draw the recursive tree
+4. about the tree:
+    a. see the flow of functions, how they are getting in stack
+    b. idenfity and focus on left tree calls and right tree calls
+    c. draw the tree and pointers again and again using pen/paper
+    d. use a debugger to see the flow
+5. 
+    a. See how the values are returned at each step
+    b. See wheere the function call will come out
+    c. in the end you will come out of the main.
+

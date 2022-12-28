@@ -1,0 +1,20 @@
+How is Binary Heap represented?
+A Binary Heap is a Complete Binary Tree.
+A binary heap is typically represented as an array.
+
+The traversal method use to achieve Array representation is LEVEL ORDER TRAVERSAL.
+
+Please note: this is applicable only for Binary Heaps:
+
+1. ROOT: N=0
+2. PARENT NODE: parent = floor((N - 1)/2)
+3. LEFT CHILD: 2N+1
+4. RIGHT CHILD: 2N+2
+
+USAGE: Access the min/max value: O(1)
+Heaps is primarily used for getting the minimum or the maximum value present in a heap in O(1) time.
+The linear data structures like Arrays or LinkedList can get you this value in O(n) time,
+while non-linear data structures like Binary Search Trees(BST) can get you this value in O(log n) time where n is the number of elements.
+
+Application:
+Heap Sort uses Binary Heap to sort an array in O(nLogn) time

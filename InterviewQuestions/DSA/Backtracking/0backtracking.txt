@@ -1,0 +1,27 @@
+https://www.youtube.com/watch?v=bRs6E_SL2Tk
+
+ABC = 3! = 6 possible ways to arrangements
+
+ABC
+ACB
+BAC
+BCA
+CAB
+CBA
+
+SIMILARY IF ABCD then 4! are the all possible arrangements
+
+
+// whenever you are taking out all possible arrangements using recursion
+// in those questions backtracking is used
+
+// A backtracking algorithm is a problem-solving algorithm that uses a brute force approach for finding the desired output. 
+// The Brute force approach tries out all the possible solutions and chooses the desired/best solutions.
+
+
+Applications
+
+Generating all Binary strings
+N-Queens Problem
+Knapsack Problem
+Graph coloring Problem

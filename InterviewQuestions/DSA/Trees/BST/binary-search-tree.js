@@ -91,11 +91,20 @@ class BinarySearchTree{
         }
     }
 
+    // leftmost node is the smallest
     findMinNode(node){
         if(node.left == null){
             return node;
         }else{
             return this.findMinNode(node.left);
+        }
+    }
+
+    findMaxNode(node){
+        if(node.right == null){
+            return node;
+        }else{
+            return this.findMaxNode(node.right);
         }
     }
 
@@ -175,30 +184,32 @@ BST.insert(68);
 BST.insert(62); 
 
 var root = BST.getRootNode(); 
-         
+        
+console.log("***********ROOT NODE*************")
+console.log(root.data); 
 
-// console.log("***********ROOT NODE*************")
-// console.log(root.data); 
-
-// //inorder
-// console.log("***********INORDER TRAVERSAL*************")
-// BST.inorderT(root); 
+//inorder
+console.log("***********INORDER TRAVERSAL*************")
+BST.inorderT(root); 
 
 
-// console.log("***********PREORDER TRAVERSAL*************")
-// BST.preOrderT(root); 
-// console.log("***********POSRTORDER TRAVERSAL*************")
-// BST.postOrderT(root); 
+console.log("***********PREORDER TRAVERSAL*************")
+BST.preOrderT(root); 
+console.log("***********POSRTORDER TRAVERSAL*************")
+BST.postOrderT(root); 
 
-// console.log("***********MIN NODE*************")
-// console.log(BST.findMinNode(root).data); 
+console.log("***********MIN NODE*************")
+console.log(BST.findMinNode(root).data); 
 
-// console.log("*******SEARCH 60***********")
-// console.log("Found: "+BST.search(root,60).data)
+console.log("***********MIN NODE*************")
+console.log(BST.findMaxNode(root).data); 
 
-// console.log("*******REMOVE 60***********")
-// BST.remove(60); 
-// console.log("Removed 60")
+console.log("*******SEARCH 60***********")
+console.log("Found: "+BST.search(root,60).data)
+
+console.log("*******REMOVE 60***********")
+BST.remove(60); 
+console.log("Removed 60")
 
 
 console.log("***********LEVEL ORDER TRAVERSAL*************")

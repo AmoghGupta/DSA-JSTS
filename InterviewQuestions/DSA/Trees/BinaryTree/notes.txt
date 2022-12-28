@@ -1,0 +1,38 @@
+
+Full Binary Tree
+// A full Binary tree - in which every parent node/internal node has either two or no children.
+
+
+Perfect Binary Tree
+// in which every internal node has exactly two child nodes and all the leaf nodes are at the same level.
+
+
+Complete Binary Tree:
+// is a full binary tree, but with two major differences
+    // Every level must be completely filled
+    // All the leaf elements must lean towards the left.
+    // The last leaf element might not have a right sibling i.e. a complete binary tree doesn't have to be a full binary tree.
+
+Skewed Binary Tree:
+// A skewed binary tree is a tree in which the tree is either 
+// dominated by the left nodes or the right nodes. Thus, there are two types of skewed binary tree:
+// left-skewed binary tree and right-skewed binary tree.
+
+Balanced Binary Tree:
+// It is a type of binary tree in which the difference between the height of the left and the 
+// right subtree for each node is either 0 or 1.
+
+// pre, post and inorder traversals are DFS (Depth first search) algos
+// level order traversals are BFS (Breadth first search) algos
+
+Applications of binary trees
+Binary Search Tree - Used in many search applications where data is constantly entering/leaving, such as the map and set objects in many languages' libraries.
+Binary Space Partition - Used in almost every 3D video game to determine what objects need to be rendered.
+Binary Tries - Used in almost every high-bandwidth router for storing router-tables.
+Hash Trees - Used in torrents and specialized image-signatures in which a hash needs to be verified, but the whole file is not available. Also used in blockchains for eg. Bitcoin.
+Heaps - Used in implementing efficient priority-queues, which in turn are used for scheduling processes in many operating systems, Quality-of-Service in routers, and A* (path-finding algorithm used in AI applications, including robotics and video games). Also used in heap-sort.
+Huffman Coding Tree (Chip Uni) - Used in compression algorithms, such as those used by the .jpeg and .mp3 file-formats.
+GGM Trees - Used in cryptographic applications to generate a tree of pseudo-random numbers.
+Syntax Tree - Constructed by compilers and (implicitly) calculators to parse expressions.
+Treap - Randomized data structure used in wireless networking and memory allocation.
+T-tree - Though most databases use some form of B-tree to store data on the drive, databases which keep all (most) their data in memory often use T-trees to do so.

@@ -1,0 +1,29 @@
+// The graph is a non-linear data structure. 
+// Graph G contains a set of vertices V and a set of Edges E. 
+// Graph has lots of applications in computer science. 
+
+Directed Graph (Di- graph) – Where edges have direction and 
+Undirected Graph – Where edges do not represent any directed
+
+If edges in your graph have weights then your graph is said to be a: Weighted graph,
+if the edges do not have weights, the graph is said to be a: Unweighted graph.
+
+
+There are various ways to represent a Graph:- 
+Adjacency Matrix -  In this method, the graph is stored in the form of the 2D matrix where rows and columns denote vertices. 
+Each entry in the matrix represents the weight of the edge between those vertices. 
+
+Adjacency List - This graph is represented as a collection of linked lists. There is an array of pointer which points to the edges 
+connected to that vertex. 
+
+We would be using Adjacency List to represent a graph because in most cases it has a certain advantage over the other representation. 
+
+Traversals:
+Breadth-First Traversal (or Search) for a graph is similar to Breadth-First Traversal of a tree. 
+The only catch here is, that, unlike trees, graphs may contain cycles, so we may come to the same node again. 
+To avoid processing a node more than once, we divide the vertices into two categories:
+1. Visited and
+2. Not visited
+A boolean visited array is used to mark the visited vertices. 
+BFS uses a queue data structure for traversal.
+There can be multiple BFS traversals for a graph.

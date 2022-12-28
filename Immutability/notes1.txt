@@ -1,0 +1,22 @@
+Primitive types in JavaScript are:
+strings
+numbers (Number and BigInt)
+booleans (true or false)
+undefined
+Symbol values
+null is a special primitive type. If you run typeof null you’ll get 'object' back, but it’s actually a primitive type.
+
+Everything that is not a primitive type is an object.Functions are objects, too.
+
+Primitive types are immutable, but objects are mutable their value can change over time.
+Primitive values are immutable — they cannot be changed after being created. 
+
+Object references, however, are mutable and can be changed. Objects can be made immutable.
+Component State/Props is an immutable object.
+State/Props should not have a multi-level nested object.
+React: compares values when looking at primitive data types, and compares references for objects.
+
+In JavaScript, only objects and arrays are mutable, not primitive values.
+
+
+1. https://flaviocopes.com/difference-primitive-types-objects/

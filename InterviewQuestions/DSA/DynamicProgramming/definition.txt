@@ -1,0 +1,32 @@
+// The definition of dynamic programming says that it is a technique for solving a complex problem by first breaking into a collection of 
+// simpler subproblems, solving each subproblem just once, and then storing their solutions to avoid repetitive computations.
+
+// Dynamic Programming is a technique for solving problems with overlapping subproblems. 
+// Each sub-problem is solved only once and the result of each sub-problem is 
+// stored in a table ( generally implemented as an array or a hash table) for future references. 
+
+// These sub-solutions may be used to obtain the original solution and the technique of storing 
+// the sub-problem solutions is known as memoization.
+
+
+// Dynamic programming approach is similar to divide and conquer in breaking down the problem into smaller and yet smaller 
+// possible sub-problems. But unlike, divide and conquer, these sub-problems are not solved independently. 
+// Rather, results of these smaller sub-problems are remembered and used for similar or overlapping sub-problems.
+
+// 1. Choice and, 
+// 2. Optimal Solution
+
+DP = Recursion + Storage
+
+
+// Dynamic programming can be used in both top-down and bottom-up manner.
+
+// And of course, most of the times, referring to the previous solution output is cheaper than recomputing in terms of CPU cycles.
+
+
+Applications
+Longest Common Subsequence, Longest Increasing Subsequence, Longest Common substring etc.
+Bellman-Ford algorithm
+Chain Matrix multiplication
+Subset Sum
+Knapsack Problem & many more.

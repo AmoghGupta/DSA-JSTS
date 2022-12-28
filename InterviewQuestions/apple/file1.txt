@@ -1,0 +1,5 @@
+1. deciding between inheritance and composition
+2. What is a compositing layer in relation to CSS3
+3. Implement array prototype methods by yourself using JS.
+4. Input array [3,4,5] output array [20, 15,12]
+5. What is promise, how can you execute array of promise sequence by sequence- use generator concept

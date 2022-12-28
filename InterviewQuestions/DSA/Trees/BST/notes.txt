@@ -1,0 +1,11 @@
+A binary search tree is a rooted binary tree in which the nodes are arranged in total order in 
+which the nodes with keys greater than any particular node is stored on the right sub-trees and 
+the ones with equal to or less than are stored on the left sub-tree satisfying the binary search property.
+
+
+Binary Search Tree - 
+Used in many search applications where data is constantly entering/leaving, such as the
+map and set objects in many languages' libraries.
+
+
+REMEMBER TIP: To print a BST in sorted manner print using INORDER traversal.
