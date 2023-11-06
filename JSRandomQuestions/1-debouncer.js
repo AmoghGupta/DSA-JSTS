@@ -30,4 +30,4 @@ const debouncerFunction = (cb, delay)=>{
 
 const onSearch = debouncerFunction(getData,300);
 // onSearch will be put in the HTML code
-
+{/* <input type="text" onKeyUp="onSearch()"></input> */}

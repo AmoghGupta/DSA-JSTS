@@ -11,7 +11,7 @@ obj[obj1]=obj1;
 // { a: '1', '[object Object]': { b: '2' } }
 
 var obj2 = {c:"3"};
-obj[obj2]=obj2;
+obj[obj2]= obj2;
 // again you trying to set object as key so it will override the same '[object Object]' key, doesnt matter if its a new object
 
 console.log(obj);

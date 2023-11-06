@@ -1,0 +1,1 @@
+// The FileReaderSync interface allows to read File or Blob objects synchronously.

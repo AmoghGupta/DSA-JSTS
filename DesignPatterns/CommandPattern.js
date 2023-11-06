@@ -21,9 +21,9 @@ var invoker = {
 // executing commands; it represents an interface
 // toward the invoker object
 var manager = {
-    execute: function(name, args) {
+    execute: function(name, ...args) {
         if (name in invoker) {
-            return invoker[name].apply(invoker, [].slice.call(arguments, 1));
+            return invoker[name].apply(invoker, args);
         }
         return false;
     }
