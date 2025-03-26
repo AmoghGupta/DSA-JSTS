@@ -1,26 +1,34 @@
-let counter = 0;
-function swap(arr,l,i){
-   let temp = arr[l];
-   arr[l]= arr[i];
-   arr[i] =temp;
-   return arr;
+
+// Permutations: Focus on arrangements or sequences where the order of elements is significant.
+
+const result = [];
+  
+function backtrack(currentPermutation, remainingElements) {
+  if (remainingElements.length === 0) {
+    result.push([...currentPermutation]); // Add a copy to the result
+    return;
+  }
+
+  for (let i = 0; i < remainingElements.length; i++) {
+    const chosenElement = remainingElements[i];
+
+    const nextPermutation = [...currentPermutation, chosenElement];
+    const nextRemainingElements = remainingElements.slice(0, i).concat(remainingElements.slice(i + 1));
+
+    backtrack(nextPermutation, nextRemainingElements);
+  }
 }
 
-function permute(arr,l,r) { 
-    // we print the leaf node
-    if (l == r){
-        counter = counter+1;
-        console.log("P: "+arr); 
-    } 
-    for (let i = l; i <= r; i++){
-        // fix i and swap 
-        arr = swap(arr,l,i); //abc //bac //cba
-        permute(arr, l+1, r); //acb //bca //cab
-        // fix i and swap again to revert to original state while travesing back (in backtracking problems we )
-        arr = swap(arr,l,i); //abc //bac //cba
-    } 
-} 
+const letters = ['a', 'b', 'c'];
+backtrack([], letters);
+console.log(result);
 
-let inputArr = ['a','b','c'];
-permute(inputArr,0,inputArr.length-1);
-console.log("Count: "+counter);
+// Expected Output:
+// [
+//   [ 'a', 'b', 'c' ],
+//   [ 'a', 'c', 'b' ],
+//   [ 'b', 'a', 'c' ],
+//   [ 'b', 'c', 'a' ],
+//   [ 'c', 'a', 'b' ],
+//   [ 'c', 'b', 'a' ]
+// ]
