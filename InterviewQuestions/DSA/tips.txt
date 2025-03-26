@@ -38,3 +38,136 @@ If asked for common strings then
 Else
   - Map/Set for O(1) time & O(n) space
   - Sort input for O(nlogn) time and O(1) space
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+**I. Core Problem-Solving Techniques**
+
+1.  **Divide and Conquer**
+
+    *   **Concept:**  Break down a problem into smaller, similar subproblems, solve the subproblems recursively, and then combine the solutions to solve the original problem.
+    *   **Data Structures Often Used:**
+        *   Arrays/Lists (for splitting the data)
+        *   Trees (especially for hierarchical division)
+    *   **Examples:**
+        *   Merge Sort
+        *   Quick Sort
+        *   Binary Search
+        *   Strassen's Matrix Multiplication
+
+2.  **Greedy Algorithms**
+
+    *   **Concept:**  Make the locally optimal choice at each step with the hope of finding the global optimum.  This doesn't always guarantee the best solution but can be efficient.
+    *   **Data Structures Often Used:**
+        *   Arrays/Lists (for holding items to choose from)
+        *   Priority Queues (Heaps) - To select the "best" option at each step efficiently.
+    *   **Examples:**
+        *   Fractional Knapsack
+        *   Dijkstra's Algorithm (shortest path)
+        *   Prim's Algorithm (minimum spanning tree)
+        *   Huffman Coding
+
+3.  **Dynamic Programming (DP)**
+
+    *   **Concept:**  Solve overlapping subproblems by storing the results of subproblems so you don't have to recompute them.  This usually involves building up a table of solutions.
+    *   **Data Structures Often Used:**
+        *   Arrays (1D, 2D, or multi-dimensional) - to store the table of solutions.
+        *   Hash Maps (for memoization - a top-down DP approach)
+    *   **Examples:**
+        *   Fibonacci sequence
+        *   0/1 Knapsack
+        *   Longest Common Subsequence (LCS)
+        *   Edit Distance
+        *   Matrix Chain Multiplication
+
+4.  **Backtracking**
+
+    *   **Concept:**  Explore all possible solutions incrementally, abandoning a path ("backtracking") as soon as it's determined that it cannot lead to a valid solution.
+    *   **Data Structures Often Used:**
+        *   Arrays/Lists (to store partial solutions)
+        *   Recursion (inherently uses the call stack)
+    *   **Examples:**
+        *   N-Queens problem
+        *   Sudoku Solver
+        *   Combination Sum
+        *   Permutations
+        *   Graph Coloring
+
+5.  **Branch and Bound**
+
+    *   **Concept:**  Similar to backtracking, but used for optimization problems. It explores the solution space using a bounding function to prune branches that cannot lead to a better solution than the current best.
+    *   **Data Structures Often Used:**
+        *   Queues (FIFO) or Priority Queues (for exploring nodes)
+    *   **Examples:**
+        *   Traveling Salesperson Problem (TSP)
+        *   Integer Programming
+
+6.  **Recursion**
+
+    *   **Concept:**  A function calling itself to solve smaller instances of the same problem.
+    *   **Data Structures Often Used:**
+        *   Stack (implicitly used by the call stack)
+        *   Trees
+    *   **Examples:**
+        *   Tree traversals (e.g., pre-order, in-order, post-order)
+        *   Fractals
+        *   Many algorithms listed above (Divide and Conquer, Backtracking)
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+**II.  Data Structures and their Typical Uses**
+
+1.  **Arrays/Lists**
+
+    *   **Uses:** General-purpose storage, indexing, sorting, searching, implementing other data structures.
+    *   **Techniques:** All of the above, depending on the specific problem.
+
+2.  **Linked Lists**
+
+    *   **Uses:** Dynamic storage, implementing stacks and queues, representing sequences of data.
+    *   **Techniques:** Often used with recursion or iterative approaches.
+
+3.  **Stacks**
+
+    *   **Uses:** Expression evaluation, function call management, undo/redo functionality, depth-first search (DFS).
+    *   **Techniques:** Recursion implicitly uses a stack. Backtracking can use a stack for explicit state management.
+
+4.  **Queues**
+
+    *   **Uses:** Breadth-first search (BFS), task scheduling, handling requests in order, implementing caches.
+    *   **Techniques:** Branch and Bound may use a queue to explore nodes.
+
+5.  **Trees**
+
+    *   **Uses:** Representing hierarchical relationships, efficient searching and sorting (binary search trees), representing data in a structured way.
+    *   **Techniques:**
+        *   Divide and Conquer (especially for binary trees)
+        *   Recursion (for traversing trees)
+        *   Dynamic Programming (sometimes, for tree-related problems)
+
+6.  **Graphs**
+
+    *   **Uses:** Representing relationships between objects, modeling networks, finding shortest paths, analyzing connectivity.
+    *   **Techniques:**
+        *   Breadth-First Search (BFS)
+        *   Depth-First Search (DFS)
+        *   Dijkstra's Algorithm (shortest path)
+        *   Prim's Algorithm (minimum spanning tree)
+        *   Topological Sort
+
+7.  **Hash Tables/Hash Maps**
+
+    *   **Uses:** Fast lookups, implementing caches, storing key-value pairs, counting frequencies.
+    *   **Techniques:**
+        *   Dynamic Programming (for memoization)
+        *   Greedy algorithms (for frequency counting)
+
+8.  **Heaps (Priority Queues)**
+
+    *   **Uses:** Efficiently finding the minimum or maximum element, implementing priority queues, scheduling tasks.
+    *   **Techniques:**
+        *   Greedy Algorithms (for selecting the "best" option)
+
+9.  **Tries (Prefix Trees)**
+
+    *   **Uses:** Efficiently storing and searching for strings based on prefixes.
+    *   **Techniques:** String manipulation, searching
